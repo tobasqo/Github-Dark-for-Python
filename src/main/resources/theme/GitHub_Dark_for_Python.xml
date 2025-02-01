@@ -1,4 +1,8 @@
 <scheme name="GitHub Dark for Python" version="142" parent_scheme="Darcula">
+<!--  <metaInfo>-->
+<!--    <property name="ide">Python</property>-->
+<!--    <property name="ideVersion">2024.3.2.0.0</property>-->
+<!--  </metaInfo>-->
   <colors>
     <option name="ADDED_LINES_COLOR" value="85e89d" />
     <option name="ANNOTATIONS_COLOR" value="a0a7b4" />
@@ -48,6 +52,31 @@
     <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="68737e" />
   </colors>
   <attributes>
+    <option name="ANGLE_BRACKETS_RAINBOW_COLOR0">
+      <value>
+        <option name="FOREGROUND" value="cea5fb" />
+      </value>
+    </option>
+    <option name="ANGLE_BRACKETS_RAINBOW_COLOR1">
+      <value>
+        <option name="FOREGROUND" value="77bdfb" />
+      </value>
+    </option>
+    <option name="ANGLE_BRACKETS_RAINBOW_COLOR2">
+      <value>
+        <option name="FOREGROUND" value="a2d2fb" />
+      </value>
+    </option>
+    <option name="ANGLE_BRACKETS_RAINBOW_COLOR3">
+      <value>
+        <option name="FOREGROUND" value="7ce38b" />
+      </value>
+    </option>
+    <option name="ANGLE_BRACKETS_RAINBOW_COLOR4">
+      <value>
+        <option name="FOREGROUND" value="faa356" />
+      </value>
+    </option>
     <option name="ANNOTATION_ATTRIBUTE_NAME_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="ffab70" />
@@ -628,6 +657,11 @@
     <option name="DEFAULT_OPERATION_SIGN">
       <value>
         <option name="FOREGROUND" value="ff7b72" />
+      </value>
+    </option>
+    <option name="DEFAULT_PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="c9d1d9" />
       </value>
     </option>
     <option name="DEFAULT_REASSIGNED_LOCAL_VARIABLE">
@@ -1709,6 +1743,11 @@
         <option name="FOREGROUND" value="ffa657" />
       </value>
     </option>
+    <option name="PY.CONSTANT">
+      <value>
+        <option name="FOREGROUND" value="faa356" />
+      </value>
+    </option>
     <option name="PY.DECORATOR">
       <value>
         <option name="FOREGROUND" value="dcbdfb" />
@@ -1722,6 +1761,11 @@
     <option name="PY.FUNC_DEFINITION">
       <value>
         <option name="FOREGROUND" value="dcbdfb" />
+      </value>
+    </option>
+    <option name="PY.IDENTIFIER">
+      <value>
+        <option name="FOREGROUND" value="77bdfb" />
       </value>
     </option>
     <option name="PY.KEYWORD">
@@ -1761,16 +1805,6 @@
       </value>
     </option>
     <option name="PY.TYPE_PARAMETER">
-      <value>
-        <option name="FOREGROUND" value="faa356" />
-      </value>
-    </option>
-    <option name="PY.IDENTIFIER">
-      <value>
-        <option name="FOREGROUND" value="77bdfb" />
-      </value>
-    </option>
-    <option name="PY.CONSTANT">
       <value>
         <option name="FOREGROUND" value="faa356" />
       </value>
@@ -1896,6 +1930,31 @@
     <option name="RHTML_SCRIPTLET_START_ID">
       <value>
         <option name="FOREGROUND" value="ffab70" />
+      </value>
+    </option>
+    <option name="ROUND_BRACKETS_RAINBOW_COLOR0">
+      <value>
+        <option name="FOREGROUND" value="cea5fb" />
+      </value>
+    </option>
+    <option name="ROUND_BRACKETS_RAINBOW_COLOR1">
+      <value>
+        <option name="FOREGROUND" value="77bdfb" />
+      </value>
+    </option>
+    <option name="ROUND_BRACKETS_RAINBOW_COLOR2">
+      <value>
+        <option name="FOREGROUND" value="a2d2fb" />
+      </value>
+    </option>
+    <option name="ROUND_BRACKETS_RAINBOW_COLOR3">
+      <value>
+        <option name="FOREGROUND" value="7ce38b" />
+      </value>
+    </option>
+    <option name="ROUND_BRACKETS_RAINBOW_COLOR4">
+      <value>
+        <option name="FOREGROUND" value="faa356" />
       </value>
     </option>
     <option name="RUBY_BAD_CHARACTER">
@@ -2127,6 +2186,56 @@
     </option>
     <option name="SQL_OUTER_QUERY_COLUMN" baseAttributes="SQL_COLUMN" />
     <option name="SQL_SYNTHETIC_ENTITY" baseAttributes="DEFAULT_PREDEFINED_SYMBOL" />
+    <option name="SQUARE_BRACKETS_RAINBOW_COLOR0">
+      <value>
+        <option name="FOREGROUND" value="cea5fb" />
+      </value>
+    </option>
+    <option name="SQUARE_BRACKETS_RAINBOW_COLOR1">
+      <value>
+        <option name="FOREGROUND" value="77bdfb" />
+      </value>
+    </option>
+    <option name="SQUARE_BRACKETS_RAINBOW_COLOR2">
+      <value>
+        <option name="FOREGROUND" value="a2d2fb" />
+      </value>
+    </option>
+    <option name="SQUARE_BRACKETS_RAINBOW_COLOR3">
+      <value>
+        <option name="FOREGROUND" value="7ce38b" />
+      </value>
+    </option>
+    <option name="SQUARE_BRACKETS_RAINBOW_COLOR4">
+      <value>
+        <option name="FOREGROUND" value="faa356" />
+      </value>
+    </option>
+    <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR0">
+      <value>
+        <option name="FOREGROUND" value="cea5fb" />
+      </value>
+    </option>
+    <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR1">
+      <value>
+        <option name="FOREGROUND" value="77bdfb" />
+      </value>
+    </option>
+    <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR2">
+      <value>
+        <option name="FOREGROUND" value="a2d2fb" />
+      </value>
+    </option>
+    <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR3">
+      <value>
+        <option name="FOREGROUND" value="7ce38b" />
+      </value>
+    </option>
+    <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR4">
+      <value>
+        <option name="FOREGROUND" value="faa356" />
+      </value>
+    </option>
     <option name="STATIC_FIELD_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="c9d1d9" />
