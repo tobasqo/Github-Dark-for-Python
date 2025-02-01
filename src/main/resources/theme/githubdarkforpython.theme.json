@@ -3,6 +3,5 @@
   "dark": true,
   "name": "GitHub Dark for Python",
   "ui": {},
-  "parentTheme": "GitHub Dark Dimmed",
   "editorScheme": "/theme/GitHub_Dark_for_Python.xml"
 }

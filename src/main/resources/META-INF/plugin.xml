@@ -5,8 +5,12 @@
     <vendor>tobasqo</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+<!--    <depends>PythonCore</depends>-->
+    <depends>Pythonid</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <themeProvider id="com.github.tobasqo.githubdarkforpython" path="/theme/githubdarkforpython.theme.json"/>
+        <annotator language="Python" implementationClass="com.github.tobasqo.githubdarkforpython.GithubDarkForPythonAnnotator"/>
     </extensions>
 </idea-plugin>
