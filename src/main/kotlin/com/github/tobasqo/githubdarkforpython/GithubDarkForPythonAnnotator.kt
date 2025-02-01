@@ -1,5 +1,6 @@
 package com.github.tobasqo.githubdarkforpython
 
+import ai.grazie.utils.isUppercase
 import com.intellij.lang.annotation.AnnotationHolder
 import com.intellij.lang.annotation.Annotator
 import com.intellij.lang.annotation.HighlightSeverity
@@ -17,15 +18,24 @@ class GithubDarkForPythonAnnotator : Annotator {
         val isNotCall = element.parent.parent !is PyCallExpression
         val isInstanceField = element.parent is PyReferenceExpression
 
-        if (isLeaf && isNotCall && isNotInstanceItself && isInstanceField) {
-            val range = TextRange(element.textRange.startOffset, element.textRange.endOffset)
-            holder
-                .newSilentAnnotation(HighlightSeverity.INFORMATION)
-                .range(range)
-                .textAttributes(attributes)
-                .create()
+        val range = TextRange(element.textRange.startOffset, element.textRange.endOffset)
+
+        val attributes: TextAttributesKey = if (isLeaf && isNotCall && isNotInstanceItself && isInstanceField) {
+            identifierAttrs
+        } else if (element.text.isUppercase()) {
+            constAttrs
+        } else {
+            defaultAttrs
         }
+
+        holder
+            .newSilentAnnotation(HighlightSeverity.INFORMATION)
+            .range(range)
+            .textAttributes(attributes)
+            .create()
     }
 }
 
-val attributes = TextAttributesKey.createTextAttributesKey("PY.IDENTIFIER")
+val identifierAttrs = TextAttributesKey.createTextAttributesKey("PY.IDENTIFIER")
+val constAttrs = TextAttributesKey.createTextAttributesKey("PY.CONSTANT")
+val defaultAttrs = TextAttributesKey.createTextAttributesKey("PY.DEFAULT")
